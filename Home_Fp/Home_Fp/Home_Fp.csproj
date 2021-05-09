@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C37F09F0-FA75-40FD-8B05-F289255841F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Home_Fp</RootNamespace>
+    <AssemblyName>Home_Fp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Animator, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Animator.1.0.3\lib\net20\Animator.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add customer.designer.cs">
+      <DependentUpon>add customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_vehilce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_vehilce.Designer.cs">
+      <DependentUpon>add_vehilce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer update.designer.cs">
+      <DependentUpon>customer update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer viwe delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer viwe delete.designer.cs">
+      <DependentUpon>customer viwe delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KN_Auto_Trading_PVT_Ltd_dbDataSet.Designer.cs" />
+    <Compile Include="KN_Auto_Trading_PVT_Ltd_dbDataSet1.Designer.cs" />
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading.designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add customer.resx">
+      <DependentUpon>add customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_vehilce.resx">
+      <DependentUpon>add_vehilce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer update.resx">
+      <DependentUpon>customer update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer viwe delete.resx">
+      <DependentUpon>customer viwe delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vhcle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vhcle %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale-statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create-512 copy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-new-user-pngrepo-com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vhcle %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Background 1.jpg" />
+    <Content Include="Resources\Background 2.jpg" />
+    <Content Include="Resources\car_23964.ico" />
+    <Content Include="Resources\circle-cropped.png" />
+    <Content Include="Resources\Final background.png" />
+    <Content Include="Resources\icons8-name-48.png" />
+    <Content Include="Resources\icons8-password-48.png" />
+    <Content Include="Resources\Login.png" />
+    <Content Include="Resources\Logo.png" />
+    <Content Include="Resources\pngegg.png" />
+    <Content Include="Resources\text.png" />
+    <Content Include="Resources\—Pngtree—tech blue gradient line shading_4050688.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
